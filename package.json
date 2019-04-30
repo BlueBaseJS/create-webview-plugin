@@ -1,28 +1,16 @@
 {
-  "name": "plugin-webView",
-  "description": "A BlueBase plugin boilerplate!",
-  "author": "BlueEast Team <code@blueeast.com>",
-  "version": "0.0.1",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "module": "dist/index.js",
-  "repository": "https://github.com/plugin-webView/plugin-webView",
-  "license": "MIT",
-  "keywords": [],
-  "config": {},
-  "remarkConfig": {
-    "plugins": [
-      "remark-preset-lint-recommended"
-    ]
-  },
-  "size-limit": [
-    {
-      "limit": "3 KB",
-      "webpack": false,
-      "path": "dist/**/*.js"
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "src",
+        "bluebase/storybook-native"
+      ],
+      "pattern": "**/*.stories.tsx",
+      "outputFile": "bluebase/storybook-native/storybook/storyLoader.js"
     }
-  ],
+  },
   "scripts": {
+    "storybook-native:start": "bluebase storybook-native:start",
     "start": "yarn run storybook",
     "clean": "rimraf coverage dist tmp",
     "watch": "tsc -w -p tsconfig.json",
@@ -59,6 +47,28 @@
     "web:start": "bluebase web:start",
     "expo:start": "bluebase expo:start"
   },
+  "name": "plugin-webView",
+  "description": "A BlueBase plugin boilerplate!",
+  "author": "BlueEast Team <code@blueeast.com>",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "repository": "https://github.com/plugin-webView/plugin-webView",
+  "license": "MIT",
+  "keywords": [],
+  "remarkConfig": {
+    "plugins": [
+      "remark-preset-lint-recommended"
+    ]
+  },
+  "size-limit": [
+    {
+      "limit": "3 KB",
+      "webpack": false,
+      "path": "dist/**/*.js"
+    }
+  ],
   "scripts-info": {
     "info": "Display information about the package scripts",
     "build": "Clean and rebuild the project",
@@ -76,9 +86,11 @@
     "node": ">=8.9"
   },
   "dependencies": {
+    "@bluebase/components": "^4.1.1",
     "deepmerge": "^3.2.0",
+    "expo": "^32.0.0",
     "react-native": "^0.57.8",
-    "react-native-webview": "^5.7.0",
+    "react-native-webview": "^5.8.0",
     "tslib": "^1.9.3"
   },
   "devDependencies": {
@@ -89,6 +101,14 @@
     "@bluebase/core": "^4.0.0-aplha.18",
     "@bluebase/storybook-addon": "^3.0.0",
     "@blueeast/tslint-config-blueeast": "^0.7.0",
+    "@storybook/addon-a11y": "^5.0.9",
+    "@storybook/addon-actions": "^5.0.9",
+    "@storybook/addon-info": "^5.0.9",
+    "@storybook/addon-knobs": "^5.0.9",
+    "@storybook/addon-links": "^5.0.9",
+    "@storybook/addon-viewport": "^5.0.9",
+    "@storybook/react": "^5.0.9",
+    "@storybook/react-native": "^4.1.18",
     "@types/deepmerge": "^2.2.0",
     "@types/enzyme": "^3.9.0",
     "@types/enzyme-adapter-react-16": "^1.0.5",
@@ -121,6 +141,7 @@
     "prettier": "^1.16.4",
     "react": "^16",
     "react-dom": "^16.8.4",
+    "react-native-storybook-loader": "^1.8.0",
     "react-native-typescript-transformer": "^1.2.12",
     "react-test-renderer": "^16.8.4",
     "remark-cli": "^6.0.1",
