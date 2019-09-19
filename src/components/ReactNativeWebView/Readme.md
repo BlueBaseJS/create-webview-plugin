@@ -4,25 +4,22 @@
 
 **React Native WebView** is a modern, well-supported, and cross-platform WebView for React Native. It is intended to be a replacement for the built-in WebView
 
-
 # React Native WebView Getting Started Guide
 
 Here's how to get started quickly with the React Native WebView.
 
 #### 1. Add react-native-webview to your dependencies
 
-```
-$ yarn add react-native-webview
-```
+    $ yarn add react-native-webview
 
 #### 2. Link native dependencies
 
 React Native modules that include native Objective-C, Swift, Java, or Kotlin code have to be "linked" so that the compiler knows to include them in the app.
 
 This module does not require any extra step after running the link command 🎉
-```
-$ react-native link react-native-webview
-```
+
+    $ react-native link react-native-webview
+
 For Android manual installation, please refer to [this article](https://engineering.brigad.co/demystifying-react-native-modules-linking-964399ec731b) where you can find detailed step on how to link any react-native project.
 
 For iOS, while you can manually link the old way using [react-native own tutorial](https://facebook.github.io/react-native/docs/linking-libraries-ios), we find it easier to use cocoapods.
