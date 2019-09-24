@@ -1,5 +1,5 @@
-import { createPlugin } from '@bluebase/core';
 import { WebView } from './components/ReactNativeWebView';
+import { createPlugin } from '@bluebase/core';
 
 export default () => {
 	return createPlugin({
