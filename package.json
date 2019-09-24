@@ -88,16 +88,16 @@
   "dependencies": {
     "@bluebase/components": "^4.1.1",
     "deepmerge": "^3.2.0",
-    "expo": "^32.0.0",
-    "react-native": "^0.57.8",
-    "react-native-webview": "^5.8.0",
+    "expo": "^33.0.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+    "react-native-webview": "^7.2.5",
     "tslib": "^1.9.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.4",
     "@bluebase/cli-essentials": "^0.0.4",
-    "@bluebase/code-standards": "^1.0.2",
+    "@bluebase/code-standards": "^2.2.4",
     "@bluebase/core": "^4.0.0-aplha.18",
     "@bluebase/storybook-addon": "^3.0.0",
     "@blueeast/tslint-config-blueeast": "^0.7.0",

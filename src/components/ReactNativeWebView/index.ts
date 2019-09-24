@@ -1,2 +1,1 @@
-import WebViewComp from './WebView';
-export default WebViewComp;
+export { WebView } from 'react-native';
