@@ -1,0 +1,21 @@
+{
+	"extends": "@bluebase/code-standards/tsconfig",
+	"compilerOptions": {
+		"outDir": "dist",
+		"rootDir": ".",
+		"skipLibCheck": true,
+		"typeRoots": ["node_modules/@types"],
+		"baseUrl": ".",
+		"paths": {
+			"*": ["typings/*"]
+		}
+	},
+	"include": ["src/**/*.ts"],
+	"exclude": [
+		"node_modules",
+		"./node_modules",
+		"./node_modules/*",
+		"node_modules/react-native-webview/lib/WebViewTypes.d.ts"
+	],
+	"compileOnSave": false
+}
