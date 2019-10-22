@@ -1,5 +1,6 @@
 {
-  "extends": [
-    "@bluebase/code-standards/tslint"
-  ]
+	"extends": ["@bluebase/code-standards/tslint"],
+	"linterOptions": {
+		"exclude": ["node_modules/*.d.ts"]
+	}
 }

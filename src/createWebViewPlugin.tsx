@@ -1,6 +1,8 @@
 import { Plugin, PluginInput, createPlugin } from '@bluebase/core';
 import { WebView, WebViewProps } from 'react-native-webview';
 
+import React from 'react';
+
 export interface WebViewPluginInput extends Partial<Plugin> {
 	/** Name of the Custom WebView component to be registered */
 	componentName: string;
